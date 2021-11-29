@@ -8,8 +8,10 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void Componentes() {
 
-        jPainel1 = new javax.swing.JPanel();
+        setTitle("Calculadora v2.2");
+
         jTextFieldOperacao = new javax.swing.JTextField();
+        jPainel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -28,7 +30,6 @@ public class Calculadora extends javax.swing.JFrame {
         jButtonIgual = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Calculadora v2");
 
         jTextFieldOperacao.setEditable(false);
         jTextFieldOperacao.setFont(new java.awt.Font("Console", 0, 15));
@@ -58,14 +59,6 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButtonMais.setFont(new java.awt.Font("Console", 0, 15));
-        jButtonMais.setText("+");
-        jButtonMais.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMaisActionPerformed(evt);
-            }
-        });
-
         jButton4.setFont(new java.awt.Font("Console", 0, 15));
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -87,14 +80,6 @@ public class Calculadora extends javax.swing.JFrame {
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
-            }
-        });
-
-        jButtonMenos.setFont(new java.awt.Font("Console", 0, 15));
-        jButtonMenos.setText("-");
-        jButtonMenos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMenosActionPerformed(evt);
             }
         });
 
@@ -130,11 +115,50 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        jButtonMais.setFont(new java.awt.Font("Console", 0, 15));
+        jButtonMais.setText("+");
+        jButtonMais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMaisActionPerformed(evt);
+            }
+        });
+
+        jButtonMenos.setFont(new java.awt.Font("Console", 0, 15));
+        jButtonMenos.setText("-");
+        jButtonMenos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMenosActionPerformed(evt);
+            }
+        });
+
         jButtonMultiplicar.setFont(new java.awt.Font("Console", 0, 15));
         jButtonMultiplicar.setText("*");
         jButtonMultiplicar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonMultiplicarActionPerformed(evt);
+            }
+        });
+        jButtonDividir.setFont(new java.awt.Font("Console", 0, 15));
+        jButtonDividir.setText("/");
+        jButtonDividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDividirActionPerformed(evt);
+            }
+        });
+
+        jButtonC.setFont(new java.awt.Font("Console", 0, 15));
+        jButtonC.setText("C");
+        jButtonC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCActionPerformed(evt);
+            }
+        });
+
+        jButtonIgual.setFont(new java.awt.Font("Console", 0, 18));
+        jButtonIgual.setText("=");
+        jButtonIgual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIgualActionPerformed(evt);
             }
         });
 
@@ -222,31 +246,9 @@ public class Calculadora extends javax.swing.JFrame {
         );
         pack();
 
-        jButtonDividir.setFont(new java.awt.Font("Console", 0, 15));
-        jButtonDividir.setText("/");
-        jButtonDividir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDividirActionPerformed(evt);
-            }
-        });
-
-        jButtonC.setFont(new java.awt.Font("Console", 0, 15));
-        jButtonC.setText("C");
-        jButtonC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCActionPerformed(evt);
-            }
-        });
-
-        jButtonIgual.setFont(new java.awt.Font("Console", 0, 18));
-        jButtonIgual.setText("=");
-        jButtonIgual.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonIgualActionPerformed(evt);
-            }
-        });
     }
 
+    //Ação Realizada
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         jTextFieldOperacao.setText(jTextFieldOperacao.getText().concat("1"));
     }
