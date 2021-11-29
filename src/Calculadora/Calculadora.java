@@ -162,6 +162,7 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        //Estrutura Calculadora
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPainel1);
         jPainel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
