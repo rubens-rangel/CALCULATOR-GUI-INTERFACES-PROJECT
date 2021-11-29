@@ -360,7 +360,6 @@ public class Calculadora extends javax.swing.JFrame {
         jTextFieldOperacao.setText(String.valueOf(resultado));
     }
 
-
     private javax.swing.JButton jButton0;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
